@@ -51,5 +51,5 @@ def insert_log_text(data):
     log_text.yview_moveto(1.0)
 
 uart = uart()
-uart.set_echo_function(insert_log_text)
+uart.SetEchoFunction(insert_log_text)
 root_ui.mainloop()

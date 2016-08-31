@@ -38,7 +38,7 @@ class uart:
             logging.basicConfig(filename = "log_{mon}_{date}_{h}_{m}_{s}.txt".format(mon = str(ltime.tm_mon).zfill(2), date =str(ltime.tm_mday).zfill(2), h =  str(ltime.tm_hour).zfill(2), m = str(ltime.tm_min).zfill(2), s = str(ltime.tm_sec).zfill(2)),
                 level = logging.DEBUG)
 
-    def set_echo_function(self, method):
+    def SetEchoFunction(self, method):
         self.__echo_method = method
     def __read_thread(self):
         while(True):
